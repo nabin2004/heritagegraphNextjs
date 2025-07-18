@@ -89,20 +89,22 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="border p-4 rounded-md">Temples</div>
             <div className="border p-4 rounded-md">Manuscripts</div>
-            <div className="border p-4 rounded-md">Festivals</div>
+            <div className="border p-4 rounded-md">And more..</div>
+
           </div>
         </section>
 
-        {/* About/Contributions */}
-        <section id="about" className="bg-muted px-4 py-20 sm:px-8">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h3 className="text-2xl font-semibold">How You Can Contribute</h3>
-            <p className="text-muted-foreground">
-              Whether you're a researcher, student, or local expert — your insights help us build a richer, verified cultural graph.
-            </p>
-          </div>
-        </section>
-
+{/* About/Contributions */}
+<section id="about" className="bg-muted px-4 py-20 sm:px-8">
+  <div className="max-w-4xl mx-auto text-center space-y-6">
+    <h3 className="text-2xl font-semibold">How You Can Contribute</h3>
+    <p className="text-muted-foreground">
+      Whether you're a researcher, student, or local expert, your insights are valuable in helping us build a richer and more reliable cultural knowledge graph. We actively welcome interdisciplinary research on — or built upon — the HeritageGraph platform. 
+      <br />
+      If you're interested in collaborating, feel free to reach out to CAIR-Nepal.
+    </p>
+  </div>
+</section>
         {/* Team */}
 <section className="px-4 py-16 sm:px-8 max-w-5xl mx-auto">
   <div className="text-center mb-10">
@@ -137,16 +139,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="px-4 py-16 sm:px-8 max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h3>
-          <Accordion type="single" collapsible>
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Is it accessible?</AccordionTrigger>
-              <AccordionContent>
-                Yes. It adheres to the WAI-ARIA design pattern.
-              </AccordionContent>
-            </AccordionItem>
+
+{/* FAQ */}
+<section className="px-4 py-16 sm:px-8 max-w-3xl mx-auto">
+  <h3 className="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h3>
+  <Accordion type="single" collapsible>
+    <AccordionItem value="ontology">
+      <AccordionTrigger>Which ontology does HeritageGraph use?</AccordionTrigger>
+      <AccordionContent>
+        HeritageGraph is based on CIDOC-CRM, an ISO standard ontology widely used in the cultural heritage domain.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="digital-preservation">
+      <AccordionTrigger>How does this help preserve cultural heritage, which is a physical task?</AccordionTrigger>
+      <AccordionContent>
+        While physical preservation is important, HeritageGraph focuses on digital preservation — capturing and organizing information about cultural heritage in a structured, accessible format.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="contribution">
+      <AccordionTrigger>Can I contribute to HeritageGraph?</AccordionTrigger>
+      <AccordionContent>
+        Yes, the project is open-source and available on GitHub. Contributions from the community are welcome.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="research-idea">
+      <AccordionTrigger>I have a research idea, but I’m not from an AI background. Can I still contribute?</AccordionTrigger>
+      <AccordionContent>
+        Absolutely. HeritageGraph encourages interdisciplinary collaboration. Feel free to reach out to CAIR-Nepal — we'd be happy to explore how we can work together.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem value="funding">
+      <AccordionTrigger>Is this project funded by any organization?</AccordionTrigger>
+      <AccordionContent>
+        No, HeritageGraph is an independent initiative developed by members of CAIR-Nepal, driven by a shared mission to preserve Nepal’s cultural heritage.
+      </AccordionContent>
+    </AccordionItem>
             {/* Add more items here */}
           </Accordion>
         </section>
